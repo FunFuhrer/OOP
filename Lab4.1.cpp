@@ -14,17 +14,17 @@ public:
 		this->years = years;
 	}
 	void set_data() {
-		cout << "Ââåäèòå èìÿ: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿: ";
 		cin >> firstName;
-		cout << "Ââåäèòå ôàìèëèş: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã´Ã Ã¬Ã¨Ã«Ã¨Ã¾: ";
 		cin >> lastName;
-		cout << "Ââåäèòå âîçğàñò: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã®Ã§Ã°Ã Ã±Ã²: ";
 		cin >> years;
 	}
 	void print_data() {
-		cout << "Èìÿ: " << firstName << endl;
-		cout << "Ôàìèëèÿ: " << lastName << endl;
-		cout << "Âîçğàñò: " << years << endl;
+		cout << "ÃˆÃ¬Ã¿: " << firstName << endl;
+		cout << "Ã”Ã Ã¬Ã¨Ã«Ã¨Ã¿: " << lastName << endl;
+		cout << "Ã‚Ã®Ã§Ã°Ã Ã±Ã²: " << years << endl;
 	}
 	Children(const Children &other) {
 		cout << "Copy " << this << endl;
@@ -42,6 +42,7 @@ int main() {
 	Children child1("a","b",0);
 	child1.set_data();
 	Children child2(child1);
+	child2.print_data();
 	system("pause");
 	return 0;
 }
