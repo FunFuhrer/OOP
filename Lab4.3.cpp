@@ -43,6 +43,7 @@ int main() {
 	Complex comp(14.88, 13.37);
 	cout << comp.module() << endl;
 	Complex comp2(comp);
+	comp2.Print();
 	system("pause");
 	return 0;
 }
