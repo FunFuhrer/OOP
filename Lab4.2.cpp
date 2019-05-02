@@ -38,7 +38,7 @@ int main() {
 	tile1.size_h = 14;
 	tile1.size_w = 88;
 	Tiles tile2(tile1);
-
+	tile2.getData();
 	system("pause");
 	return 0;
 }
